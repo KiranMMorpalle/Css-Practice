@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+            height: 4000px;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            background-color: aqua;
+            display: grid;
+            grid-template-rows: 100px 1fr 100px; 
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 10px;
+            column-gap: 10px;
+
+            
+        }
+
+        .header,.footer{ 
+            background-color: rgb(17, 16, 16); 
+            grid-column-start:1;
+            grid-column-end: 4;
+            color: white;
+        }
+/* 
+        .footer{ 
+            background-color: rgb(17, 16, 16); 
+            grid-column-start:1;
+            grid-column-end: 4;
+        } */
+
+        .item{
+            background-color: burlywood;
+        }
+         
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Header
+        </div>
+        <div class="item item1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure saepe inventore quam quidem. Impedit adipisci autem temporibus, vero et aliquam!
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure saepe inventore quam quidem. Impedit adipisci autem temporibus, vero et aliquam!
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure saepe inventore quam quidem. Impedit adipisci autem temporibus, vero et aliquam!
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

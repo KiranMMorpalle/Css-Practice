@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Display</title>
+
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0; */
+            box-sizing: border-box;
+        }
+        header{
+            /* border: 2px solid blue; */
+            width: 1200px;
+            margin: auto;
+        }
+
+        img{
+            width: 10%;
+            display: block;
+            margin: auto;
+            border-radius: 40%;
+        }
+        h3{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        .box{
+            border: 2px solid black;
+            border-radius: 20px;
+            background: gray;
+            display: inline-block;
+            width: 33%; 
+            margin: 10px 0;
+            padding: 20px;
+        }
+
+        .box:hover{
+            background: #ac5959;
+        }
+
+        .container{
+            /* border: 2px solid green; */
+            width: 1200px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="dr.jpg" alt="">
+        <h3>Welcome to Krushna's Blog.</h3>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h4>This is article.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit excepturi, similique harum quis quae magni labore quaerat magnam, ut sunt totam exercitationem. Reprehenderit nam provident fugit placeat doloribus nesciunt?</p>
+        </div>
+        <div class="box">
+            <h4>This is article.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit excepturi, similique harum quis quae magni labore quaerat magnam, ut sunt totam exercitationem. Reprehenderit nam provident fugit placeat doloribus nesciunt?</p>
+        </div>
+        <div class="box">
+            <h4>This is article.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit excepturi, similique harum quis quae magni labore quaerat magnam, ut sunt totam exercitationem. Reprehenderit nam provident fugit placeat doloribus nesciunt?</p>
+        </div>
+    </div>
+
+</body>
+</html>
